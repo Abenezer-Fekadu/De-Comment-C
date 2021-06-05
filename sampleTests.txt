@@ -1,0 +1,66 @@
+// test 1
+abc/*def*/ghi 
+abc/*def*/ s ghi 
+
+abc s /*def*/ghi 
+
+//test 2
+abc//def 
+
+//test 3
+abc/*def
+ghi*/jkl
+mno
+
+
+abc/*def
+ghi
+jkl*/mno
+pqr
+
+//test 4
+abc"def/*ghi*/jkl"mno 
+abc/*def"ghi"jkl*/mno 
+abc/*def"ghijkl*/mno 
+
+
+//test 5
+abc'def/*ghi*/jkl'mno 
+abc/*def'ghi'jkl*/mno 
+abc/*def'ghijkl*/mno 
+
+//test 6
+abc"def\"ghi"jkl 
+abc"def\'ghi"jkl 
+
+//test 7
+abc'def\'ghi'jkl 
+abc'def\"ghi'jkl 
+
+//test 8
+abc"def
+ghi"jkl
+
+abc"def
+ghi
+jkl"mno/*pqr*/stu
+
+
+//test 9
+abc'def
+ghi
+jkl'mno/*pqr*/stu
+
+
+//test 10
+abc'def/*ghi*/jkl
+abc"def/*ghi*/jkl 
+
+
+//Errors
+//test 11
+
+abc/*def
+ghi*/
+
+abc/*def/ghi n jkl n

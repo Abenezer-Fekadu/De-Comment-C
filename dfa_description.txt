@@ -1,0 +1,40 @@
+A  -   IN_PRINTED_CODE
+
+When the current character is in this Phase, the current code will excuted.
+
+B  -   IN_STRING
+
+If the current character is in this Phase, it is guranteed that it is string constant and it will be executed.
+
+C  -   STRING_ESCAPE
+
+If the current character is in this Phase, the next characters that come after this character will be considered as string constant and they will be executed.
+
+D  -   ABOUT_TO_START_A_COMMENT
+
+In this phase "/" is encounterd and it means it is ready to get to 
+
+IN_COMMENT phase when * is found next
+
+E  -   IN_COMMENT
+
+In this phase the comment will be ignored by the compiler
+
+F  -   ABOUT_TO_END_A_COMMENT
+
+In this phase when "*" is found, it refers the current comment is about to end when "/" is encounterd.
+
+F  -   IN_CHAR
+
+If the current character is in this Phase, it is guranteed that it is character constant and it will be executed.
+
+H  -   CHAR_ESCAPE
+
+If the current character is in this Phase, the next characters that come after this character will be considered as character constant and they will be executed.
+
+
+
+
+
+
+
